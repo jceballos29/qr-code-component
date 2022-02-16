@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import qrCode from "./images/qr_img.png";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="qr-image">
+                <img src={qrCode} alt="QR Code" />
+            </div>
+            <div className="content">
+                <h1>Improve your front-end skills by building projects</h1>
+                <p>
+                    Scan the qr code to visit my website and find more
+                    information about me and my career.
+                </p>
+            </div>
+        </div>
+    );
 }
 
 export default App;
